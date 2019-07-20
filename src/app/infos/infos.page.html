@@ -1,0 +1,35 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button>
+		<img width="20px" src="assets/icon/libra-icon.svg" alt="libra-menu">
+	  </ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+		<span class="general-title">
+			معلومات عامة عن الليبرا
+		</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+	<div *ngFor="let card of cards" class="cards-container">
+		<ion-card class="card">
+			<ion-card-header>
+				<ion-card-subtitle>
+					"ليبرا" عملة فيس بوك ستغير حياة الملايين من البشر 
+				</ion-card-subtitle>
+				<ion-card-title>
+					ما هي الليبرا ؟
+				</ion-card-title>
+			</ion-card-header>
+
+			<ion-card-content>
+				تستقبل الأسواق المصرفية العالمية العام المقبل عملة رقمية غير ورقية جديدة تحمل اسم " ليبرا "، و التي ستطلقها شركة الفيسبوك بعدما أخذت زمام مبادرة إنشائها...
+			</ion-card-content>
+		</ion-card>
+	</div>
+</ion-content>
