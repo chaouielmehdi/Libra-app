@@ -1,0 +1,40 @@
+.back-button{
+	position: absolute;
+}
+
+.card-container{
+	display: flex;
+	justify-content: center;
+}
+
+.card{
+	border-top: 4px solid #35599E;
+	width: 90%;
+	background-color: white;
+}
+
+.card:active{
+	background-color: rgba(53, 90, 158, 0.1);
+}
+
+.info-card-container{
+	padding-top: 10px;
+	padding-right: 35px;
+	padding-left: 30px;
+	padding-bottom: 40px;
+	position: absolute;
+}
+
+.info-title{
+	font-weight: bolder;
+}
+
+.info-subtitle{
+	font-size: 14px;
+	color: grey;
+}
+
+.info-content{
+	font-size: 18px;
+	color: rgb(80, 80, 80);
+}

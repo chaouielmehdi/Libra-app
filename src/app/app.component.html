@@ -2,13 +2,13 @@
   <ion-split-pane>
     <ion-menu side="end" type="overlay">
       <ion-header>
-        <ion-toolbar>
+  		<ion-toolbar color="primary">
           <ion-title>
 			القائمة
 		  </ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content>
+      <ion-content class="menu-content">
         <ion-list>
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" routerLinkActive="active-item">

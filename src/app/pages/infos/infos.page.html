@@ -1,0 +1,65 @@
+
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button>
+		<img width="20px" src="assets/icon/libra-icon.svg" alt="libra-menu">
+	  </ion-menu-button>
+	  <ion-button [hidden]="isCardHidden" (click)="backClicked()" class="back-button">
+		<ion-icon name="arrow-forward"></ion-icon>
+	  </ion-button>
+    </ion-buttons>
+    <ion-title>
+		<span class="general-title">
+			معلومات عامة عن الليبرا
+		</span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+	<!-- one-info-card -->
+	<div class="info-card-container" id="info-card-container" [hidden]="isCardHidden">
+		<div class="info">
+			<h2 class="info-title">
+				ما هي الليبرا ؟
+			</h2>
+			<h6 class="info-subtitle">
+				"ليبرا" عملة فيس بوك ستغير حياة الملايين من البشر حول العالم
+			</h6>
+			<p class="info-content">
+				
+					تستقبل الأسواق المصرفية العالمية العام المقبل عملة رقمية غير ورقية جديدة تحمل اسم " ليبرا "، و التي ستطلقها شركة الفيسبوك بعدما أخذت زمام مبادرة إنشائها والتقنية الخاصة بها، وعلى وقع الاستعداد لاطلاق تلك العملة يسعى الفيسبوك إلى إنشاء صراف آلى لتحويل النقود العادية إلى عملتها الجديدة والعكس ، بالإضافة إلى إنشاء منصات تختلف عن منصات الفيسبوك العادية.
+
+					وتشمل الخدمة المرتقبة ، المستخدمين الذين لا يملكون حسابا مصرفيا ، والبالغ عددهم7 .1 مليار شخص حول العالم ، لتصبح العملة الجديدة مصدر الدخل الجديد للفيسبوك بعيدا عن إيرادات الإعلانات ، ومن المقرر بدء التداول بالعملة الجديدة بشكل منتظم بحلول منتصف العام المقبل بحسب توقعات مسئولى الشركة.
+					
+					ويمكن لزوار مواقع التواصل الاجتماعى استخدام ( الليبرا ) في تسديد المدفوعات والتجارة والحصول على التطبيقات والألعاب المدفوعة ،مما سيوفر 25 مليار دولار من التحويلات المالية سنويا لصالح الشركة.
+					
+			</p>
+		</div>
+	</div>
+	<!-- end one-info-card -->
+
+	<!-- info cards -->
+	<div class="cards-container" id="cards-container">
+		<div *ngFor="let card of cards" class="card-container" [hidden]="areCardsHidden">
+			<ion-card class="card" (click)="cardClicked(card)">
+				<ion-card-header>
+					<ion-card-subtitle>
+						"ليبرا" عملة فيس بوك ستغير حياة الملايين من البشر
+					</ion-card-subtitle>
+					<ion-card-title>
+						ما هي الليبرا ؟
+					</ion-card-title>
+				</ion-card-header>
+
+				<ion-card-content>
+					تستقبل الأسواق المصرفية العالمية العام المقبل عملة رقمية غير ورقية جديدة تحمل اسم " ليبرا "، و التي ستطلقها شركة الفيسبوك بعدما أخذت زمام مبادرة إنشائها...
+				</ion-card-content>
+			</ion-card>
+		</div>
+	</div>
+	<!-- end info-cards -->
+
+</ion-content>

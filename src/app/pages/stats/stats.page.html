@@ -1,5 +1,11 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+	<ion-buttons slot="start">
+	  <ion-back-button
+		defaultHref="/"
+	  >
+	  </ion-back-button>
+	</ion-buttons>
     <ion-buttons slot="start">
       <ion-menu-button>
 		<img width="20px" src="assets/icon/libra-icon.svg" alt="libra-menu">
@@ -7,13 +13,8 @@
     </ion-buttons>
     <ion-title>
 		<span class="general-title">
-			الرئيسية
+			إحصائيات
 		</span>
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
-	<ion-button (click)="animateToLeft()" color="primary">to left</ion-button>
-	<ion-button (click)="animateToRight()" color="primary">to right</ion-button>
-	<div class="square"></div>
-</ion-content>

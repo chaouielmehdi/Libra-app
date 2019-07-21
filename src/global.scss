@@ -9,3 +9,33 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+ion-app{
+	direction: rtl;
+}
+
+ion-content:not(.menu-content){
+	//--ion-background-color: url("assets/icon/libra-icon.svg") no-repeat fixed;
+	--ion-background-color: rgba(53, 90, 158, 0.1);
+}
+
+ion-back-button{
+	transform: rotate(180deg);
+}
+
+.general-title{
+	padding: 0;
+	margin: 0;
+	padding-top: 14px;
+	height: 55px;
+	color: #35599E;
+	color: white;
+	// background-color: #35599E;
+	// background-image: linear-gradient(to top right, #35599E, rgb(107, 102, 202)); /* Standard syntax (must be last) */
+	// box-shadow: 0 1px 5px rgba(0, 0, 0, 0.212);
+}
+
+
+.color-primary{
+	background: linear-gradient(to top right, #35599E, rgb(83, 124, 200));
+}

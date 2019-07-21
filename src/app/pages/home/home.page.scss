@@ -1,0 +1,34 @@
+.header{
+	height: 350px;
+	width: 100%;
+	position: absolute;
+	color: white;
+}
+
+.header-logo{
+	margin-top: 100px;
+}
+
+.header-legend p{
+	font-size: 19px;
+}
+
+.cards-container{
+	margin-top: 300px !important;
+}
+
+.card{
+	background-color: white;
+	width: 90%;
+}
+
+.card-icon{
+	padding: 0;
+	margin: 0;
+	font-size: 35px;
+	display: block;
+}
+.card-legend{
+	font-size: 20px;
+	font-weight: bolder;
+}

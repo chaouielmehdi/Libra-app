@@ -17,7 +17,7 @@ export class AppComponent {
 			icon: 'home'
 		},
 		{
-			title: 'معلومات عامة',
+			title: 'معلومات',
 			url: '/infos',
 			icon: 'information-circle'
 		},

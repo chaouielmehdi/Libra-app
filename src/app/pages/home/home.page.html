@@ -1,0 +1,66 @@
+<div class="header color-primary ion-text-center ion-padding" [hidden]="isHeaderHidden">
+	<div class="header-logo">
+		<img src="assets/logo.svg" width="100" alt="logo">
+	</div>
+	<div class="header-legend">
+		<p>كل ما يتعلق بعملة الفيسبوك الجديدة</p>
+	</div>
+</div>
+<ion-content>
+	<ion-grid class="cards-container" [hidden]="areCardsHidden">
+		<ion-row>
+			<ion-col class="ion-text-center">
+				<ion-card class="card right-card" (click)="cardClicked('infos')">
+					<ion-card-content>
+						<div class="card-icon">
+							<ion-icon name="information-circle"></ion-icon>
+						</div>
+						<span class="card-legend">
+							معلومات
+						</span>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col class="ion-text-center">
+				<ion-card class="card left-card" (click)="cardClicked('news')">
+					<ion-card-content>
+						<div class="card-icon">
+							<ion-icon name="paper"></ion-icon>
+						</div>
+						<p class="card-legend">
+							مستجدات
+						</p>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+		
+		<ion-row>
+			<ion-col class="ion-text-center">
+				<ion-card class="card right-card" (click)="cardClicked('stats')">
+					<ion-card-content>
+						<div class="card-icon">
+							<ion-icon name="stats"></ion-icon>
+						</div>
+						<span class="card-legend">
+							إحصائيات
+						</span>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+			<ion-col class="ion-text-center">
+				<ion-card class="card left-card" (click)="cardClicked('stats')">
+					<ion-card-content>
+						<div class="card-icon">
+							<ion-icon name="stats"></ion-icon>
+						</div>
+						<span class="card-legend">
+							إحصائيات
+						</span>
+					</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+
+</ion-content>
