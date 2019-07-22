@@ -24,7 +24,7 @@ export class InfosPage implements OnInit {
 			setTimeout(() => {
 				this.isCardClicked = false;
 			}, 2000);
-
+			
 			// hide all cards
 			this.hideCards();
 	

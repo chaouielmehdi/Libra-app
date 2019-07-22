@@ -1,14 +1,16 @@
-<div class="header color-primary ion-text-center ion-padding" [hidden]="isHeaderHidden">
-	<div class="header-logo">
-		<img src="assets/logo.svg" width="100" alt="logo">
-	</div>
-	<div class="header-legend">
-		<p>كل ما يتعلق بعملة الفيسبوك الجديدة</p>
+<div id="header" class="header color-primary ion-text-center ion-padding" [hidden]="isHeaderHidden">
+	<div class="header-elements">
+		<div class="header-logo">
+			<img src="assets/logo.svg" width="100" alt="logo">
+		</div>
+		<div class="header-legend">
+			<p>كل ما يتعلق بعملة الفيسبوك الجديدة</p>
+		</div>
 	</div>
 </div>
 <ion-content>
 	<ion-grid class="cards-container" [hidden]="areCardsHidden">
-		<ion-row>
+		<ion-row class="ion-justify-content-end">
 			<ion-col class="ion-text-center">
 				<ion-card class="card right-card" (click)="cardClicked('infos')">
 					<ion-card-content>

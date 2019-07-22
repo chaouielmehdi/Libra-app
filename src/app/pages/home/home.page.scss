@@ -1,8 +1,13 @@
 .header{
-	height: 350px;
+	height: 400px;
 	width: 100%;
 	position: absolute;
 	color: white;
+}
+
+
+.header-elements{
+	transform: translateY(100px);
 }
 
 .header-logo{
@@ -20,6 +25,7 @@
 .card{
 	background-color: white;
 	width: 90%;
+	margin-right: 5%;
 }
 
 .card-icon{

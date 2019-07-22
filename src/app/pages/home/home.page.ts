@@ -16,9 +16,14 @@ export class HomePage implements OnInit{
   	constructor(
 		private router: Router
 	) {}
-
+	
 	ngOnInit() {
-		this.appFirstOpen();
+		if(this.isFirstOpen){
+			this.appFirstOpen();
+		}
+		else{
+			this.showCards();
+		}
 	}
 
 	appFirstOpen(){
@@ -26,11 +31,20 @@ export class HomePage implements OnInit{
 
 		// hide cards
 		this.areCardsHidden = true;
-
 		
+		setTimeout(() => {
+			anime({
+				targets: '.header-elements',
+				translateY: [100, 0],
+				delay: function(el, i, l) {
+				  return i * 50;
+				},
+				duration: 800
+			});
 
-		this.areCardsHidden = false;
-		this.showCards();
+			this.showCards();
+		}, 1500);
+
 	}
 
 	cardClicked(page: string){
@@ -44,9 +58,22 @@ export class HomePage implements OnInit{
 		this.router.navigateByUrl('/'+page);
 	}
 
+
+    /*
+    |--------------------------------------------------------------------------
+    | cards animations
+    |--------------------------------------------------------------------------
+    |
+    | The cards animations (show hide...) using anime.js
+    |
+    */
+
 	showCards(){
-		// make cards visible
-		this.areCardsHidden = false;
+		// animate cards
+		setTimeout(() => {
+			// make cards visible
+			this.areCardsHidden = false;
+		}, 50);
 
 		// animate cards
 		setTimeout(() => {
