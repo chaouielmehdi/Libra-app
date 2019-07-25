@@ -1,5 +1,8 @@
 {
-  "name": "menutestapp",
-  "integrations": {},
+  "name": "libra-app",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }

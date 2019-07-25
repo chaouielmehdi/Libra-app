@@ -1,0 +1,7 @@
+{
+  "appId": "com.app.libra",
+  "appName": "libra",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}
